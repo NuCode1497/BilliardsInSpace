@@ -1,0 +1,453 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>d644f882-24a6-4879-8e3e-1537a15fc225</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v3.1</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont1.spritefont">
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont2.spritefont">
+      <Name>SpriteFont2</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XNAGifAnimationLibrary.Pipeline\XNAGifAnimationLibrary.Pipeline.csproj">
+      <Project>{A3766078-1346-471F-A593-13590E139734}</Project>
+      <Name>XNAGifAnimationLibrary.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XNAGifAnimationLibrary\XNAGifAnimationLibrary.csproj">
+      <Project>{FA31B1C8-F365-411C-B14E-C757F0087FA7}</Project>
+      <Name>XNAGifAnimationLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avatar\Avatar_Aim_E.gif">
+      <Name>Avatar_Aim_E</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_N.gif">
+      <Name>Avatar_Aim_N</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_NE.gif">
+      <Name>Avatar_Aim_NE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_NW.gif">
+      <Name>Avatar_Aim_NW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_S.gif">
+      <Name>Avatar_Aim_S</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_SE.gif">
+      <Name>Avatar_Aim_SE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_SW.gif">
+      <Name>Avatar_Aim_SW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Aim_W.gif">
+      <Name>Avatar_Aim_W</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_E.gif">
+      <Name>Avatar_Fire_E</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_N.gif">
+      <Name>Avatar_Fire_N</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_NE.gif">
+      <Name>Avatar_Fire_NE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_NW.gif">
+      <Name>Avatar_Fire_NW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_S.gif">
+      <Name>Avatar_Fire_S</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_SE.gif">
+      <Name>Avatar_Fire_SE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_SW.gif">
+      <Name>Avatar_Fire_SW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Fire_W.gif">
+      <Name>Avatar_Fire_W</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_E.gif">
+      <Name>Avatar_Hold_E</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_N.gif">
+      <Name>Avatar_Hold_N</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_NE.gif">
+      <Name>Avatar_Hold_NE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_NW.gif">
+      <Name>Avatar_Hold_NW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_S.gif">
+      <Name>Avatar_Hold_S</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_SE.gif">
+      <Name>Avatar_Hold_SE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_SW.gif">
+      <Name>Avatar_Hold_SW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Hold_W.gif">
+      <Name>Avatar_Hold_W</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_E.gif">
+      <Name>Avatar_Ready_E</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_N.gif">
+      <Name>Avatar_Ready_N</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_NE.gif">
+      <Name>Avatar_Ready_NE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_NW.gif">
+      <Name>Avatar_Ready_NW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_S.gif">
+      <Name>Avatar_Ready_S</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_SE.gif">
+      <Name>Avatar_Ready_SE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_SW.gif">
+      <Name>Avatar_Ready_SW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Ready_W.gif">
+      <Name>Avatar_Ready_W</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_E.gif">
+      <Name>Avatar_Run_E</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_N.gif">
+      <Name>Avatar_Run_N</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_NE.gif">
+      <Name>Avatar_Run_NE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_NW.gif">
+      <Name>Avatar_Run_NW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_S.gif">
+      <Name>Avatar_Run_S</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_SE.gif">
+      <Name>Avatar_Run_SE</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_SW.gif">
+      <Name>Avatar_Run_SW</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Avatar\Avatar_Run_W.gif">
+      <Name>Avatar_Run_W</Name>
+      <Importer>GifAminationImporter</Importer>
+      <Processor>GifAnimationProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AimStick.png">
+      <Name>AimStick</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balls\NoiseBall.png">
+      <Name>NoiseBall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\Charge.wav">
+      <Name>Charge</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Sounds\ChargeLoop.wav">
+      <Name>ChargeLoop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Sounds\clack.wav">
+      <Name>clack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Sounds\Fire.wav">
+      <Name>Fire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Sounds\pocket.wav">
+      <Name>pocket</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\thwop.wav">
+      <Name>thwop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\FingerPlop4.wav">
+      <Name>FingerPlop4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balls\10ball.png">
+      <Name>10ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\11ball.png">
+      <Name>11ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\12ball.png">
+      <Name>12ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\13ball.png">
+      <Name>13ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\14ball.png">
+      <Name>14ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\15ball.png">
+      <Name>15ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\1ball.png">
+      <Name>1ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\2ball.png">
+      <Name>2ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\3ball.png">
+      <Name>3ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\4ball.png">
+      <Name>4ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\5ball.png">
+      <Name>5ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\6ball.png">
+      <Name>6ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\7ball.png">
+      <Name>7ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\8ball.png">
+      <Name>8ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\9ball.png">
+      <Name>9ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Balls\cueball.png">
+      <Name>cueball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\dup.wav">
+      <Name>dup</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Table.png">
+      <Name>Table</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="crosshair.png">
+      <Name>crosshair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="star.png">
+      <Name>star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balls\bluePlanet.png">
+      <Name>bluePlanet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Instructions.png">
+      <Name>Instructions</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
